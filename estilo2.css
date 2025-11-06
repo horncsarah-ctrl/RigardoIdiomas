@@ -1,0 +1,177 @@
+:root{/*serve para declarar variável global no CSS*/
+    --background-color:#256b94;
+    --color: white;
+}
+
+*{ /*Seletor universal*/
+    margin: 0px;
+}
+
+body{
+    background-color: #46a5c0;
+    margin: 1%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1%;
+    align-items: center;
+}
+
+.estilodosbotoesdenavegacao{
+    padding: 10px; /*distância entre o conteúdo de um elemento e suas bordas*/
+    border-radius: 5px;
+    background-color: var(--background-color);
+    text-decoration: none;
+    color: var(--color);
+    transition: 1s;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circulopatos{
+    border-radius: 50%;
+}
+
+.cursosonline{
+    margin: 1.5%;
+    font-family:"Inter", sans-serif;
+    color: var(--color);
+    font-size: 30px;
+}
+
+.comeceaprender{
+    margin: 1.5%;
+    font-family: "Merriweather", serif;
+    color: var(--color);
+    font-size: 90px;
+}
+
+.aquinarigardoidiomas{
+    margin: 1.5%;
+    font-family:"Inter", sans-serif;
+    color: var(--color);
+    font-size: 30px;
+}
+
+.imagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 30px 0px; /*definir o espaçamento entre os itens em layouts*/
+}
+
+.foto_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 30%;
+    margin: 0%;
+    padding: 20px;
+    box-sizing: border-box; /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai + ou não o padding e o border)
+    border box: inclui o padding e o border dentro dessas dimensões*/
+    background-color: var(--background-color);
+    color: white;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+}
+
+.foto_texto img{
+    width: 50%;
+    height: 70%;
+    align-items: flex-start;
+}
+
+.foto_texto:hover {
+    background-color: #143b52;
+    text-decoration: none;
+    color: white;
+}
+
+.foto_texto p{
+    width: 70%;
+}
+
+.organizacaolinguas{
+    font-family: "Merriweather", serif; 
+    font-size: 20px;
+    color: white;
+    margin: 1.5%;
+    text-align: justify;
+}
+
+.setinha{
+    margin:1.5%;
+}
+
+/* MAHIARA */
+
+.texto{
+    font-size: 2rem;
+    width: 70%;
+    margin: 1.5%;
+    font-family: "Merriweather", serif;
+    color: var(--color);
+    font-size: 30px;
+    text-align: justify;
+ }
+
+ .foto_do_patinho{
+  width: 25%;
+  position: fixed;
+  top: 70px;
+  right: 0%;
+  margin: 1.5%;
+ }
+
+ .patinho_conversando{
+  width: 100%;
+ }
+
+.organizacao_professores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px 2%; /*definir o espaçamento entre os itens em layouts*/   
+}
+
+.foto_texto_pag_professores img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.foto_texto_pag_professores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50% 50% 10% 10% / 25% 25% 10% 10%;
+    width: 30%;
+    margin: 0%;
+    padding: 1%;
+    box-sizing: border-box; /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai + ou não o padding e o border)
+    border box: inclui o padding e o border dentro dessas dimensões*/
+    background-color: var(--background-color);
+    color: white;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+}
+
+.foto_texto_pag_professores:hover{
+    background-color: #143b52;
+    text-decoration: none;
+    color: white;
+}
