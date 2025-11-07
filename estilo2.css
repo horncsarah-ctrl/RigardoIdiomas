@@ -31,6 +31,13 @@ header{
     font-size: 15px;
 }
 
+.organizacaolinguas{
+    font-family: "Merriweather", serif; 
+    font-size: 20px;
+    color: white;
+    margin: 1.5%;
+    text-align: justify;
+}
 
 .home{
     display: flex;
