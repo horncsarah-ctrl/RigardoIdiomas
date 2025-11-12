@@ -1,6 +1,17 @@
 :root{/*declarar variável global no CSS*/
     --background-color:#256b94;
-    --color: white;
+    --color-text: white;
+    --background-color-body:#46a5c0;
+    --background-color-fototexto-professores: #143b52;
+    --background-color-botao-carrosel: #144561;
+}
+
+.temanatalino{
+    --background-color:#309425;
+    --color-text: rgb(148, 42, 42);
+    --background-color-body:#f3c81d;
+    --background-color-fototexto-professores: #add3a9;
+    --background-color-botao-carrosel: #de2326;
 }
 
 *{ /*Seletor universal*/
@@ -8,7 +19,7 @@
 }
 
 body{
-    background-color: #46a5c0;
+    background-color: var(--background-color-body);
     margin: 1%;
 }
 
@@ -25,7 +36,7 @@ header{
     border-radius: 5px;
     background-color: var(--background-color);
     text-decoration: none;
-    color: var(--color);
+    color: var(--color-text);
     transition: 1s;
     font-family: "Inter", sans-serif;
     font-size: 15px;
@@ -34,7 +45,7 @@ header{
 .organizacaolinguas{
     font-family: "Merriweather", serif; 
     font-size: 20px;
-    color: white;
+    color: var(--color-text);
     margin: 1.5%;
     text-align: justify;
 }
@@ -52,21 +63,21 @@ header{
 .cursosonline{
     margin: 1.5%;
     font-family:"Inter", sans-serif;
-    color: var(--color);
+    color: var(--color-text);
     font-size: 30px;
 }
 
 .comeceaprender{
     margin: 1.5%;
     font-family: "Merriweather", serif;
-    color: var(--color);
+    color: var(--color-text);
     font-size: 90px;
 }
 
 .aquinarigardoidiomas{
     margin: 1.5%;
     font-family:"Inter", sans-serif;
-    color: var(--color);
+    color: var(--color-text);
     font-size: 30px;
 }
 
@@ -89,7 +100,7 @@ header{
     width: 70%;
     margin: 1.5%;
     font-family: "Merriweather", serif;
-    color: var(--color);
+    color: var(--color-text);
     font-size: 30px;
     text-align: justify;
  }
@@ -132,16 +143,16 @@ header{
     box-sizing: border-box; /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai somar ou não o padding e o border)
     border box: inclui o padding e o border dentro dessas dimensões*/
     background-color: var(--background-color);
-    color: white;
+    color: var(--color-text);
     text-align: justify;
     font-family: "Merriweather", serif;
     text-decoration: none;
 }
 
 .foto_texto_pag_professores:hover{
-    background-color: #143b52;
+    background-color: var(--background-color-fototexto-professores);
     text-decoration: none;
-    color: white;
+    color: var(--color-text);
 }
 
 /* Carrosel de textos para a página cursos */
@@ -166,7 +177,7 @@ header{
 .carrosel::scroll-button(right), .carrosel::scroll-button(left) { /*estilizar os botões de rolagem*/
     content: '→'; /*define o conteúdo do botão*/
     border: none; /* remover a borda padrão do botão*/
-    background-color: #144561; 
+    background-color: var(--background-color-botao-carrosel) 
     font-family: Consolas;
     font-size: 3em;
     color: white;
@@ -199,7 +210,7 @@ header{
     flex: 0 0 40em; /*como o item deve se comportar dentro de um container. O valor é dividido em: flex-grow, flex-shrink e flex-basis.*/
     /*flex-grow: O item não deve crescer.  flex-shrink: O item não deve encolher. flex-basis: Define o tamanho inicial*/
     height: auto;
-    background-color:   #143b52;
+    background-color: var(--background-color-fototexto-professores);
     /* padding: 1em; */
     border-radius: .5em;
     text-align: center;
@@ -217,16 +228,16 @@ header{
     box-sizing: border-box; /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai + ou não o padding e o border)
     border box: inclui o padding e o border dentro dessas dimensões*/
     background-color: var(--background-color);
-    color: white;
+    color: var(--color-text);
     text-align: justify;
     font-family: "Merriweather", serif;
     text-decoration: none;
 }
 
 .foto_texto:hover {
-    background-color: #143b52;
+    background-color: var(--background-color-fototexto-professores);
     text-decoration: none;
-    color: white;
+    color: var(--color-text);
 }
 
 .foto_texto p{
