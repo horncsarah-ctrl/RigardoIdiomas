@@ -4,19 +4,19 @@
     --background-color-body:#46a5c0;
     --background-color-fototexto-professores: #143b52;
     --background-color-botao-carrosel: #144561;
+    --color-text-botoes: white;
+    --cor-fundo:blue;
 }
 
 .temanatalino{
-    --background-color:#309425;
-    --color-text: rgb(148, 42, 42);
-    --background-color-body:#f3c81d;
-    --background-color-fototexto-professores: #add3a9;
-    --background-color-botao-carrosel: #de2326;
+    --background-color:#D8A5A1;
+    --color-text: #ffffff;
+    --background-color-body: #69212C;
+    --background-color-fototexto-professores: #803c37;
+    --background-color-botao-carrosel: #955f5b;
+    --color-text-botoes: #7F2928;
 }
 
-*{ /*Seletor universal*/
-    margin: 0px;
-}
 
 body{
     background-color: var(--background-color-body);
@@ -36,7 +36,7 @@ header{
     border-radius: 5px;
     background-color: var(--background-color);
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-text-botoes);
     transition: 1s;
     font-family: "Inter", sans-serif;
     font-size: 15px;
@@ -177,7 +177,7 @@ header{
 .carrosel::scroll-button(right), .carrosel::scroll-button(left) { /*estilizar os botões de rolagem*/
     content: '→'; /*define o conteúdo do botão*/
     border: none; /* remover a borda padrão do botão*/
-    background-color: var(--background-color-botao-carrosel) 
+    background-color: var(--background-color-botao-carrosel);
     font-family: Consolas;
     font-size: 3em;
     color: white;
@@ -242,4 +242,29 @@ header{
 
 .foto_texto p{
     width: 70%;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#botao{
+    border-radius: 50%;
+    position: absolute;
+    top:20px;
+    left: 50%;
+}
+
+#videozinho{
+    display: none;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  transform: translateY(-50%) translateX(-50%);
 }
