@@ -9,14 +9,25 @@
 }
 
 .temanatalino{
-    --background-color:#D8A5A1;
+    --background-color:#69212C;
     --color-text: #ffffff;
     --background-color-body: #69212C;
-    --background-color-fototexto-professores: #803c37;
+    --background-color-fototexto-professores: #D8A5A1;
     --background-color-botao-carrosel: #955f5b;
-    --color-text-botoes: #7F2928;
+    --color-text-botoes: #ffff;
 }
 
+@media(max-width: 600px){
+    .home{
+    flex-direction: column;
+        background-color: red;}
+       .colunadireita{
+            width: 80%;
+        }
+        .colunaesquerda{
+            width: 80%;
+        }
+}
 
 body{
     background-color: var(--background-color-body);
@@ -57,6 +68,8 @@ header{
 }
 
 .circulopatos{
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
 }
 
@@ -244,7 +257,6 @@ header{
     width: 70%;
 }
 
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -260,11 +272,184 @@ header{
 
 #videozinho{
     display: none;
-position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 100%;
-  min-width: 100%;
-  z-index: -1;
-  transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+/* ESTILO DO SIGN IN */
+
+.divform1 p{
+    color: var(--color-text);
+    font-family: "Merriweather", serif;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input,
+select {
+    width: 42vh;
+}
+
+.divform1 {
+    width: 45vh;
+    align-self: center;
+    text-align: center;
+    font-size: 1.8rem;
+    align-items: center;
+}
+
+.divform2 {
+    font-size: 1.7rem;
+    background-color: var(--background-color);
+    height: 55vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patobone {
+    position: relative;
+    top: 30px;
+}
+
+.main-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.config-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.714);
+    width: 60vh;
+    height: fit-content;
+    gap: 1vh;
+    border: rgba(255, 255, 255, 0) ridge;
+    border-radius: 10%;
+}
+
+.input-sign {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: black ridge;
+    width: auto;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 1.5vh;
+}
+
+.check-sign {
+    display: flex;
+    align-items: baseline;
+}
+
+.cadastro {
+    position: relative;
+    left: -1vh;
+    font-size: 1.5rem;
+    color: rgb(112, 8, 114);
+}
+
+.cadastro:hover {
+    padding: auto;
+    border-left: ridge rgb(64, 0, 255);
+    border-right: rgb(64, 0, 255) ridge;
+}
+
+.p-acess {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.h2--index {
+    font-size: 2rem;
+}
+
+.button-entrar:hover {
+    color: rgb(55, 136, 241);
+    transition: 0.5s;
+}
+
+.button-entrar {
+    background-color: rgb(52, 47, 47);
+    color: white;
+    border: none;
+    padding: auto;
+    font-size: 1.2rem;
+
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        background-color: aqua;
+
+    }
+
+    .divform2 {
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        width: 45vh;
+        height: 68vh;
+        border-radius: 0;
+        position: relative;
+        left: 0.2vh;
+        align-items: center;
+    }
+
+    input,
+    select {
+        width: 30vh;
+    }
+}
+
+@media screen and (min-width:465px) and (max-width:675px) {
+    body {
+        background-image: none;
+        background-color: rgb(39, 89, 165);
+    }
+
+    .divform2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6rem;
+        height: 66vh;
+        width: 45vh;
+        position: relative;
+        align-items: center;
+        left: 0.8vh;
+    }
+
+    input,
+    select {
+        width: 28vh;
+    }
+
 }

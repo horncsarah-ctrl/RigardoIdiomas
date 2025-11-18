@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="icon" href="fotos/icon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <script defer src="script.js"></script>
+    <script defer src="videozinho.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0;
+            background-image: url(fotos/fundo-pato-ex.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body id="body" class="">
+    <header>
+        <h1>
+            <a href="index.html">
+                <img id="nomedaempresa" src="./fotos/rigardo2.1.png" alt="nome da empresa" width="322px">
+            </a>
+        </h1>
+        <nav class="botoesdenavegacao">
+            <ul>
+                <a class="estilodosbotoesdenavegacao" href="index.html">Início</a>
+                <a class="estilodosbotoesdenavegacao" href="sobrenos.html">Sobre nós</a>
+                <a class="estilodosbotoesdenavegacao" href="cursos.html">Cursos</a>
+                <a class="estilodosbotoesdenavegacao" href="professores.html">Professores</a>
+                <a class="estilodosbotoesdenavegacao" href="sign_in.html">Sign In</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-form">
+
+        <div class="divform1">
+            <br>
+            <br>
+            <br>
+            <div class="divform2">
+                <p>Nome:</p>
+                <input type="text" id="var" placeholder="Digite seu Nome">
+                <p>Curso Desejado:</p>
+                <label for="Idioma"></label>
+                <select name="Idioma" id="Idioma">
+                    <option value="Idioma">Escolher um Curso</option>
+                    <option value="Idioma">Inglês</option>
+                    <option value="Idioma">Francês</option>
+                    <option value="Idioma">Japonês</option>
+                    <option value="Idioma">Espanhol</option>
+                    <option value="Idioma">Italiano</option>
+                    <option value="Idioma">Alemão</option>
+                </select>
+                <p>Email:</p>
+                <input type="email" placeholder="Digite seu Email">
+                <p>Telefone:</p>
+                <input type="number" placeholder="Digite seu Telefone">
+                <p>Turma:</p>
+                <label for="turma">
+                </label>
+                <select name="turma" id="turma">
+                    <option value="Turma">Escolher uma Turma</option>
+                    <option value="turma">1A-Inglês</option>
+                    <option value="turma">2B-Francês</option>
+                    <option value="turma">3C-Japonês</option>
+                    <option value="turma">4D-Espanhol</option>
+                    <option value="Turma">5E-Italiano</option>
+                    <option value="turma">6F-Alemão</option>
+                </select>
+                <p>Dia:</p>
+                <label for="turma">
+                </label>
+                <select name="Dia" id="Dia">
+                    <option value="Dia">Escolher um Dia</option>
+                    <option value="Dia">Segunda</option>
+                    <option value="Dia">Terça</option>
+                    <option value="Dia">Quarta</option>
+                    <option value="Dia">Quinta</option>
+                    <option value="Dia">Sexta</option>
+                    <option value="Dia">Sábado</option>
+                </select>
+                <p>Horario:</p>
+                <div class="button__index"></div>
+                <input type="time" style="width: auto;">
+                <button onclick="onamewa()" class="button_index">Acessar</button>
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+        <video id="videozinho" src="./fotos/fundonatal.mp4" autoplay loop></video>
+</body>
+
+</html>
