@@ -17,18 +17,6 @@
     --color-text-botoes: #ffff;
 }
 
-@media(max-width: 600px){
-    .home{
-    flex-direction: column;
-        background-color: red;}
-       .colunadireita{
-            width: 80%;
-        }
-        .colunaesquerda{
-            width: 80%;
-        }
-}
-
 body{
     background-color: var(--background-color-body);
     margin: 1%;
@@ -310,17 +298,13 @@ select {
 .divform2 {
     font-size: 1.7rem;
     background-color: var(--background-color);
-    height: 55vh;
+    height: 57vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.patobone {
-    position: relative;
-    top: 30px;
-}
 
 .main-sign {
     display: flex;
@@ -388,7 +372,7 @@ input::placeholder {
 .h2--index {
     font-size: 2rem;
 }
-
+ 
 .button-entrar:hover {
     color: rgb(55, 136, 241);
     transition: 0.5s;
@@ -402,54 +386,38 @@ input::placeholder {
     font-size: 1.2rem;
 
 }
-
-@media screen and (max-width: 450px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        background-image: none;
-        background-color: aqua;
-
+@media screen and (min-width:480px) and (max-width: 700px) {
+    body{
+        margin: 15px;
+        width: auto;
     }
-
-    .divform2 {
-        font-size: 1.8rem;
-        display: flex;
-        flex-direction: column;
-        width: 45vh;
-        height: 68vh;
-        border-radius: 0;
-        position: relative;
-        left: 0.2vh;
-        align-items: center;
-    }
-
-    input,
-    select {
-        width: 30vh;
-    }
+.h1alemao{
+    font-size: 2.2rem;
 }
-
-@media screen and (min-width:465px) and (max-width:675px) {
-    body {
-        background-image: none;
-        background-color: rgb(39, 89, 165);
-    }
-
-    .divform2 {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.6rem;
-        height: 66vh;
-        width: 45vh;
-        position: relative;
-        align-items: center;
-        left: 0.8vh;
-    }
-
-    input,
-    select {
-        width: 28vh;
-    }
-
+.circulopatos{
+    width:200px ;
+    height:200px ;
+}
+.aquinarigardoidiomas{
+    margin: 1.5%;
+    font-family:"Inter", sans-serif;
+    color: var(--color-text);
+    font-size: 1rem;
+}
+.comeceaprender{
+    font-size: 2rem;
+}
+.estilodosbotoesdenavegacao{
+    padding: 5px; /*distância entre o conteúdo de um elemento e suas bordas*/
+    border-radius: 5px;
+    background-color: var(--background-color);
+    text-decoration: none;
+    color: var(--color-text-botoes);
+    transition: 1s;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+}
+.nomedaempresa{
+    width: 150px;
+}
 }
