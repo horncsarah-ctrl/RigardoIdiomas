@@ -28,6 +28,7 @@ header{
     justify-content: space-between;
     margin: 1%;
     align-items: center;
+    
 }
 
 .estilodosbotoesdenavegacao{
@@ -255,7 +256,7 @@ header{
     border-radius: 50%;
     position: absolute;
     top:20px;
-    left: 50%;
+    left: 68%;
 }
 
 #videozinho{
@@ -386,7 +387,7 @@ input::placeholder {
     font-size: 1.2rem;
 
 }
-@media screen and (min-width:480px) and (max-width: 700px) {
+@media screen and (min-width:400px) and (max-width: 700px) {
     body{
         margin: 15px;
         width: auto;
@@ -418,6 +419,71 @@ input::placeholder {
     font-size: 10px;
 }
 .nomedaempresa{
-    width: 150px;
+    width: 100px;
+}
+#botao{
+    border-radius: 50%;
+    position: absolute;
+    top:18px;
+    left: 29%;
+    width: 30px;
+}
+.foto_texto_pag_professores{
+    font-size: 0.5rem;
+
+}
+.organizacao_professores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 5px 1%; /*definir o espaçamento entre os itens em layouts*/   
+}
+.cards{
+    scroll-snap-align: start; /*faz com que cada slide pare e se alinhe precisamente à esquerda do carrossel quando o usuário rola.*/
+    flex: 0 0 25em; /*como o item deve se comportar dentro de um container. O valor é dividido em: flex-grow, flex-shrink e flex-basis.*/
+    /*flex-grow: O item não deve crescer.  flex-shrink: O item não deve encolher. flex-basis: Define o tamanho inicial*/
+    height: auto;
+    background-color: var(--background-color-fototexto-professores);
+    /* padding: 1em; */
+    border-radius: .5em;
+    text-align: center;
+    align-content: center;
+}
+.foto_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 40%;
+    margin: 0%;
+    padding: 20px;
+    box-sizing: border-box; /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai + ou não o padding e o border)
+    border box: inclui o padding e o border dentro dessas dimensões*/
+    background-color: var(--background-color);
+    color: var(--color-text);
+    text-align: justify;
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+}
+        .body-sign-in {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0;
+            background-image: linear-gradient(to left , rgb(9, 183, 236), #257394);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .divform2 {
+    font-size: 1.7rem;
+    background-color: var(--background-color);
+    height: 45vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 }
