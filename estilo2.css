@@ -32,7 +32,7 @@
     --background-color-side-menu-hover: #69212C;
 }
 
-body {
+body{
     background-color: var(--background-color-body);
     margin: 1%;
 }
@@ -43,6 +43,7 @@ header {
     justify-content: space-between;
     margin: 1%;
     align-items: center;
+    
 }
 
 .estilodosbotoesdenavegacao {
@@ -343,7 +344,7 @@ select {
 }
 
 .divform1 {
-    width: 45vh;
+    width: 22vw;
     align-self: center;
     text-align: center;
     font-size: 1.8rem;
@@ -353,17 +354,13 @@ select {
 .divform2 {
     font-size: 1.7rem;
     background-color: var(--background-color);
-    height: 55vh;
+    height: 57vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.patobone {
-    position: relative;
-    top: 30px;
-}
 
 .main-sign {
     display: flex;
@@ -431,7 +428,7 @@ input::placeholder {
 .h2--index {
     font-size: 2rem;
 }
-
+ 
 .button-entrar:hover {
     color: rgb(55, 136, 241);
     transition: 0.5s;
