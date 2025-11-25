@@ -1,16 +1,19 @@
-let temanatalino = localStorage.getItem('temanatalino')
-const botao = document.getElementById('botao')
+let temanatalino = localStorage.getItem('temanatalino');
+const botao = document.getElementById('botao');
+const botao2 = document.getElementById('botao2');
 
 function atualizar_tema(){
     if(document.getElementById("body").classList.contains("temanatalino")){
-        document.getElementById("circulopatinhos").src = "./fotos/merryducksmas.png";
+        document.getElementById("circulopatinhos").src="./fotos/merryducksmas.png";
         document.getElementById("botao").src = "./fotos/circulopatos.png";
+        document.getElementById("botao2").src = "./fotos/circulopatos.png";
         document.getElementById("videozinho").style.display = "block";
         document.getElementById("nomedaempresa").src = "./fotos/rigardo2.1.png";
     }
     else{
         document.getElementById("circulopatinhos").src = "./fotos/circulopatos.png";
         document.getElementById("botao").src = "./fotos/botaonatal.png";
+        document.getElementById("botao2").src = "./fotos/botaonatal.png";
         document.getElementById("videozinho").style.display = "none";
         document.getElementById("nomedaempresa").src = "./fotos/rigardo2.1.png";
     }    
@@ -33,10 +36,26 @@ if (temanatalino === "active") {
 }
 
 botao.addEventListener("click", () => {
-    temanatalino !== "active" ? enabletemanatalino() : disabletemanatalino()
-    temanatalino = localStorage.getItem('temanatalino')
-    atualizar_tema()
+    temanatalino !== "active" ? enabletemanatalino() : disabletemanatalino();
+    temanatalino = localStorage.getItem('temanatalino');
+    atualizar_tema();
 })
+
+botao2.addEventListener("click", () => {
+    temanatalino !== "active" ? enabletemanatalino() : disabletemanatalino();
+    temanatalino = localStorage.getItem('temanatalino');
+    atualizar_tema();
+})
+
+function showSidebar(){
+    const sidebar= document.getElementById('sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar(){
+    const sidebar= document.getElementById('sidebar');
+    sidebar.style.display = 'none';
+}
 
 
 

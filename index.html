@@ -14,19 +14,37 @@
     <script defer src="script.js"></script>
 </head>
 <body id="body" class="">
-    <header>
+    <header class="nav-bar">
         <h1>
             <a href="index.html">
                 <img id="nomedaempresa" src="./fotos/rigardo2.1.png" alt="nome da empresa" width="322px">
             </a>
         </h1>
+        <img id="botao" src="./fotos/botaonatal.png"  width="60px">
         <nav class="botoesdenavegacao">
-            <ul>
-                <a class="estilodosbotoesdenavegacao" href="index.html">Início</a>
-                <a class="estilodosbotoesdenavegacao" href="sobrenos.html">Sobre nós</a>
-                <a class="estilodosbotoesdenavegacao" href="cursos.html">Cursos</a>
-                <a class="estilodosbotoesdenavegacao" href="professores.html">Professores</a>
-                <a class="estilodosbotoesdenavegacao" href="sign_in.html">Sign In</a>
+            <ul class="topbar">
+                <a class="estilodosbotoesdenavegacao hideOnMobile" href="index.html">Início</a>
+                <a class="estilodosbotoesdenavegacao hideOnMobile" href="sobrenos.html">Sobre nós</a>
+                <a class="estilodosbotoesdenavegacao hideOnMobile" href="cursos.html">Cursos</a>
+                <a class="estilodosbotoesdenavegacao hideOnMobile" href="professores.html">Professores</a>
+                <a class="estilodosbotoesdenavegacao hideOnMobile" href="sign_in.html">Sign In</a>
+                <a class="menu_botao" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="#FFFFFF">
+                        <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a>
+            </ul>
+            <ul id="sidebar">
+                <a onclick="hideSidebar()" class="estilodomenu"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="#FFFFFF">
+                        <path
+                            d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a>
+                <a class="estilodosbotoesdenavegacao_menususpenso" href="index.html">Início</a>
+                <a class="estilodosbotoesdenavegacao_menususpenso" href="sobrenos.html">Sobre nós</a>
+                <a class="estilodosbotoesdenavegacao_menususpenso" href="cursos.html">Cursos</a>
+                <a class="estilodosbotoesdenavegacao_menususpenso" href="professores.html">Professores</a>
+                <a class="estilodosbotoesdenavegacao_menususpenso" href="sign_in.html">Sign In</a>
+                <img id="botao2" src="./fotos/botaonatal.png" width="60px">
             </ul>
         </nav>
     </header>
@@ -44,8 +62,6 @@
             <img id="circulopatinhos" class="circulopatos" src="./fotos/circulopatos.png" alt="nome da empresa">
         </div>
     </main>
-                <!--- <img class="circulopatos" src="./fotos/Captura de tela 2025-11-13 154726.png" alt="nome da empresa" width="600px" height="600px" > !--->
-                <img id="botao" src="./fotos/botaonatal.png" onclick="mudar_cor_tema()" width="60px">
                 <video id="videozinho" src="./fotos/fundonatal.mp4" autoplay loop></video>
 </body>
 </html>

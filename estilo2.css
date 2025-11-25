@@ -1,40 +1,43 @@
-:root{/*declarar variável global no CSS*/
-    --background-color:#256b94;
+:root {
+    /*declarar variável global no CSS*/
+    --background-color: #256b94;
     --color-text: white;
-    --background-color-body:#46a5c0;
+    --background-color-body: #46a5c0;
     --background-color-fototexto-professores: #143b52;
+    /* var para mudar a cor dos card de professores quando passar o mouse por cima*/
     --background-color-botao-carrosel: #144561;
     --color-text-botoes: white;
-    --cor-fundo:blue;
+    /*mudar a cor dos botões de navegação*/
+    --background-color-side-menu: #1445619b;
+    --background-color-side-menu-hover: #143b52;
 }
 
-.temanatalino{
-    --background-color:#69212C;
+.topbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 5px;
+}
+
+.temanatalino {
+    /*serve para quando apertar o botão, o js inserir essa classe no body para mudar o estilo do site*/
+    --background-color: #69212C;
     --color-text: #ffffff;
-    --background-color-body: #69212C;
+    --background-color-body: #2b1311;
     --background-color-fototexto-professores: #D8A5A1;
+    /* var para mudar a cor dos card de professores quando passar o mouse por cima*/
     --background-color-botao-carrosel: #955f5b;
     --color-text-botoes: #ffff;
+    /*mudar a cor dos botões de navegação*/
+    --background-color-side-menu: #69212c8b;
+    --background-color-side-menu-hover: #69212C;
 }
 
-@media(max-width: 600px){
-    .home{
-    flex-direction: column;
-        background-color: red;}
-       .colunadireita{
-            width: 80%;
-        }
-        .colunaesquerda{
-            width: 80%;
-        }
-}
-
-body{
+body {
     background-color: var(--background-color-body);
     margin: 1%;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,8 +45,9 @@ header{
     align-items: center;
 }
 
-.estilodosbotoesdenavegacao{
-    padding: 10px; /*distância entre o conteúdo de um elemento e suas bordas*/
+.estilodosbotoesdenavegacao {
+    padding: 10px;
+    /*distância entre o conteúdo de um elemento e suas bordas*/
     border-radius: 5px;
     background-color: var(--background-color);
     text-decoration: none;
@@ -53,62 +57,73 @@ header{
     font-size: 15px;
 }
 
-.organizacaolinguas{
-    font-family: "Merriweather", serif; 
+/*Organização da página inicial*/
+
+.organizacaolinguas {
+    font-family: "Merriweather", serif;
     font-size: 20px;
     color: var(--color-text);
     margin: 1.5%;
     text-align: justify;
 }
 
-.home{
+.home {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.circulopatos{
-    width: 600px;
-    height: 600px;
+.colunadireita {
+    width: 40%;
+}
+
+.colunaesquerda {
+    width: 55%;
+}
+
+.circulopatos {
+    width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
 }
 
-.cursosonline{
+.cursosonline {
     margin: 1.5%;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--color-text);
     font-size: 30px;
 }
 
-.comeceaprender{
+.comeceaprender {
     margin: 1.5%;
     font-family: "Merriweather", serif;
     color: var(--color-text);
     font-size: 90px;
 }
 
-.aquinarigardoidiomas{
+.aquinarigardoidiomas {
     margin: 1.5%;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--color-text);
     font-size: 30px;
 }
 
-.imagens{
+.imagens {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    gap: 30px 0px; /*definir o espaçamento entre os itens em layouts*/
+    gap: 30px 0px;
+    /*definir o espaçamento entre os itens em layouts*/
 }
 
-.setinha{
-    margin:1.5%;
+.setinha {
+    margin: 1.5%;
 }
 
 /* Organização da página sobre nós */
 
-.texto{
+.texto {
     font-size: 2rem;
     width: 70%;
     margin: 1.5%;
@@ -116,44 +131,47 @@ header{
     color: var(--color-text);
     font-size: 30px;
     text-align: justify;
- }
+}
 
- .foto_do_patinho{
-  width: 25%;
-  position: fixed;
-  top: 70px;
-  right: 0%;
-  margin: 1.5%;
- }
+.foto_do_patinho {
+    width: 25%;
+    position: fixed;
+    top: 70px;
+    right: 0%;
+    margin: 1.5%;
+}
 
- .patinho_conversando{
-  width: 100%;
- }
+.patinho_conversando {
+    width: 100%;
+}
 
 /* Organização da página sobre os professores */
 
-.organizacao_professores{
+.organizacao_professores {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    gap: 10px 2%; /*definir o espaçamento entre os itens em layouts*/   
+    gap: 10px 2%;
+    /*definir o espaçamento entre os itens em layouts*/
 }
 
-.foto_texto_pag_professores img{
+.foto_texto_pag_professores img {
     border-radius: 50%;
     width: 80%;
 }
 
-.foto_texto_pag_professores{
+.foto_texto_pag_professores {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 50% 50% 10% 10% / 25% 25% 10% 10%; /*quando você usa uma barra, você está definindo os raios horizontal e vertical separadamente para cada canto.*/
+    border-radius: 50% 50% 10% 10% / 25% 25% 10% 10%;
+    /*quando você usa uma barra, você está definindo os raios horizontal e vertical separadamente para cada canto.*/
     width: 30%;
     margin: 0%;
     padding: 1%;
-    box-sizing: border-box; /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai somar ou não o padding e o border)
+    box-sizing: border-box;
+    /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai somar ou não o padding e o border)
     border box: inclui o padding e o border dentro dessas dimensões*/
     background-color: var(--background-color);
     color: var(--color-text);
@@ -162,7 +180,7 @@ header{
     text-decoration: none;
 }
 
-.foto_texto_pag_professores:hover{
+.foto_texto_pag_professores:hover {
     background-color: var(--background-color-fototexto-professores);
     text-decoration: none;
     color: var(--color-text);
@@ -170,26 +188,36 @@ header{
 
 /* Carrosel de textos para a página cursos */
 
-.carrosel{
-    margin:1%;
+.carrosel {
+    margin: 1%;
     width: 100%;
-    overflow-x: auto; /*se o conteúdo exceder a largura horizontal, uma barra de rolagem horizontal deve ser exibida para permitir a visualização. */
-    margin: 3em auto; /* o auto serve para manter o espaçamento. */
-    display: flex; 
+    overflow-x: auto;
+    /*se o conteúdo exceder a largura horizontal, uma barra de rolagem horizontal deve ser exibida para permitir a visualização. */
+    margin: 3em auto;
+    /* o auto serve para manter o espaçamento. */
+    display: flex;
     gap: 1em;
-    scroll-behavior: smooth; /* scroll-behavior: movimento de rolagem; smooth: rolagem suave em vez de um salto instantâneo. */
-    anchor-name: --carrosel; /* define um nome de âncora para este elemento. Usado para posicionar outros elementos em relação a este carrossel.*/
-    scroll-snap-type: x mandatory; /*força o navegador a "encaixar" o ponto de rolagem no eixo x (horizontal), tornando o encaixe obrigatório (mandatory). 
+    scroll-behavior: smooth;
+    /* scroll-behavior: movimento de rolagem; smooth: rolagem suave em vez de um salto instantâneo. */
+    anchor-name: --carrosel;
+    /* define um nome de âncora para este elemento. Usado para posicionar outros elementos em relação a este carrossel.*/
+    scroll-snap-type: x mandatory;
+    /*força o navegador a "encaixar" o ponto de rolagem no eixo x (horizontal), tornando o encaixe obrigatório (mandatory). 
     Isso garante que, ao rolar, cada slide do carrossel pare exatamente na borda, sem ficar "meio termo".*/
 }
 
-.carrosel::-webkit-scrollbar{ /*pseudo-elemento, seletor especificamente da barra de rolagem em navegadores baseados no motor WebKit (Chrome, Safari e Edge)*/
+.carrosel::-webkit-scrollbar {
+    /*pseudo-elemento, seletor especificamente da barra de rolagem em navegadores baseados no motor WebKit (Chrome, Safari e Edge)*/
     display: none;
 }
 
-.carrosel::scroll-button(right), .carrosel::scroll-button(left) { /*estilizar os botões de rolagem*/
-    content: '→'; /*define o conteúdo do botão*/
-    border: none; /* remover a borda padrão do botão*/
+.carrosel::scroll-button(right),
+.carrosel::scroll-button(left) {
+    /*estilizar os botões de rolagem*/
+    content: '→';
+    /*define o conteúdo do botão*/
+    border: none;
+    /* remover a borda padrão do botão*/
     background-color: var(--background-color-botao-carrosel);
     font-family: Consolas;
     font-size: 3em;
@@ -197,30 +225,41 @@ header{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    padding-bottom: .1em; /*adiciona um pequeno preenchimento na parte inferior para ajustar o alinhamento vertical do símbolo da seta dentro do círculo.*/
-    cursor: pointer; /*muda o cursor do mouse para uma mãozinha ao passar sobre o botão, indicando que ele é clicável.*/
-    position: fixed; /*tenta fixar a posição do botão em relação à viewport*/
-    position-anchor: --carrosel; /*define o ponto de referência do elemento âncora*/
+    padding-bottom: .1em;
+    /*adiciona um pequeno preenchimento na parte inferior para ajustar o alinhamento vertical do símbolo da seta dentro do círculo.*/
+    cursor: pointer;
+    /*muda o cursor do mouse para uma mãozinha ao passar sobre o botão, indicando que ele é clicável.*/
+    position: fixed;
+    /*tenta fixar a posição do botão em relação à viewport*/
+    position-anchor: --carrosel;
+    /*define o ponto de referência do elemento âncora*/
     position-area: right center;
-    translate: -80%; /*para puxar o botão da borda direita do carrossel para dentro da área do carrossel*/
+    translate: -80%;
+    /*para puxar o botão da borda direita do carrossel para dentro da área do carrossel*/
 }
 
 .carrosel::scroll-button(left) {
-    content: '←'; /*define o conteúdo do botão*/
+    content: '←';
+    /*define o conteúdo do botão*/
     position-area: left center;
-    translate: 80%; /*para puxar o botão da borda direita do carrossel para dentro da área do carrossel*/
+    translate: 80%;
+    /*para puxar o botão da borda direita do carrossel para dentro da área do carrossel*/
 }
 
-.carrosel::scroll-button(right):disabled, .carrosel::scroll-button(left):disabled{
+.carrosel::scroll-button(right):disabled,
+.carrosel::scroll-button(left):disabled {
     /*aplica estilos específicos para os botões de rolagem do carrossel quando eles estão desativados, quando o carrossel já está no início e o botão "esquerda" não pode
     mais rolar, ou no final para o botão "direita"*/
     opacity: 0.5;
-    cursor: auto; /*define o cursor do mouse para o seu estado padrão (geralmente uma seta). Isso remove o cursor de mãozinha*/
+    cursor: auto;
+    /*define o cursor do mouse para o seu estado padrão (geralmente uma seta). Isso remove o cursor de mãozinha*/
 }
 
-.cards{
-    scroll-snap-align: start; /*faz com que cada slide pare e se alinhe precisamente à esquerda do carrossel quando o usuário rola.*/
-    flex: 0 0 40em; /*como o item deve se comportar dentro de um container. O valor é dividido em: flex-grow, flex-shrink e flex-basis.*/
+.cards {
+    scroll-snap-align: start;
+    /*faz com que cada slide pare e se alinhe precisamente à esquerda do carrossel quando o usuário rola.*/
+    flex: 0 0 30em;
+    /*como o item deve se comportar dentro de um container. O valor é dividido em: flex-grow, flex-shrink e flex-basis.*/
     /*flex-grow: O item não deve crescer.  flex-shrink: O item não deve encolher. flex-basis: Define o tamanho inicial*/
     height: auto;
     background-color: var(--background-color-fototexto-professores);
@@ -238,7 +277,8 @@ header{
     width: 40%;
     margin: 0%;
     padding: 20px;
-    box-sizing: border-box; /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai + ou não o padding e o border)
+    box-sizing: border-box;
+    /*box-sizing: definir como a largura e a altura em um elemento são calculadas (se vai + ou não o padding e o border)
     border box: inclui o padding e o border dentro dessas dimensões*/
     background-color: var(--background-color);
     color: var(--color-text);
@@ -253,26 +293,30 @@ header{
     color: var(--color-text);
 }
 
-.foto_texto p{
+.foto_texto p {
     width: 70%;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-#botao{
+#botao {
     border-radius: 50%;
-    position: absolute;
-    top:20px;
-    left: 50%;
+
+    display: block;
 }
 
-#videozinho{
+#botao2 {
+    border-radius: 50%;
     display: none;
-    position: absolute;
+}
+
+#videozinho {
+    display: none;
+    position: fixed;
     top: 50%;
     left: 50%;
     min-height: 100%;
@@ -283,7 +327,7 @@ header{
 
 /* ESTILO DO SIGN IN */
 
-.divform1 p{
+.divform1 p {
     color: var(--color-text);
     font-family: "Merriweather", serif;
 }
@@ -291,7 +335,6 @@ header{
 .main-form {
     display: flex;
     flex-direction: column;
-
 }
 
 input,
@@ -400,16 +443,87 @@ input::placeholder {
     border: none;
     padding: auto;
     font-size: 1.2rem;
-
 }
 
-@media screen and (max-width: 450px) {
-    body {
+/*ORGANIZAÇÃO MENU SUSPEN*/
+
+.estilodosbotoesdenavegacao_menususpenso {
+    padding: 10px;
+    /*distância entre o conteúdo de um elemento e suas bordas*/
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+#sidebar {
+    position: fixed;
+    gap: 30px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--background-color-side-menu);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* #sidebar a {
+    width: 100%;
+} */
+
+#sidebar a:hover{
+    background-color: var(--background-color-side-menu-hover);
+}
+
+.menu_botao {
+    display: none;
+}
+
+.estilodomenu{
+    align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu_botao {
+        display: block;
+    }
+
+    #botao {
+        display: none;
+    }
+
+    #botao2 {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .colunadireita {
+        width: 100%;
+    }
+
+    .colunaesquerda {
+        width: 100%;
+    }
+
+        body {
         display: flex;
         flex-direction: column;
         background-image: none;
-        background-color: aqua;
-
+        background-color: var(--background-color-body);
     }
 
     .divform2 {
@@ -428,28 +542,8 @@ input::placeholder {
     select {
         width: 30vh;
     }
-}
 
-@media screen and (min-width:465px) and (max-width:675px) {
-    body {
-        background-image: none;
-        background-color: rgb(39, 89, 165);
+    .foto_texto_pag_professores {
+        width: 80%;
     }
-
-    .divform2 {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.6rem;
-        height: 66vh;
-        width: 45vh;
-        position: relative;
-        align-items: center;
-        left: 0.8vh;
-    }
-
-    input,
-    select {
-        width: 28vh;
-    }
-
 }
