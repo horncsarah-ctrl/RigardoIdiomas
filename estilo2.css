@@ -12,18 +12,12 @@
     --background-color-side-menu-hover: #143b52;
 }
 
-.topbar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px 5px;
-}
-
 .temanatalino {
     /*serve para quando apertar o botão, o js inserir essa classe no body para mudar o estilo do site*/
     --background-color: #69212C;
     --color-text: #ffffff;
-    --background-color-body: #2b1311;
-    --background-color-fototexto-professores: #D8A5A1;
+    --background-color-body: #69212C;
+    --background-color-fototexto-professores: #b04152;
     /* var para mudar a cor dos card de professores quando passar o mouse por cima*/
     --background-color-botao-carrosel: #955f5b;
     --color-text-botoes: #ffff;
@@ -32,7 +26,13 @@
     --background-color-side-menu-hover: #69212C;
 }
 
-body{
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
     background-color: var(--background-color-body);
     margin: 1%;
 }
@@ -43,10 +43,11 @@ header {
     justify-content: space-between;
     margin: 1%;
     align-items: center;
-    
+
 }
 
 .estilodosbotoesdenavegacao {
+    /* estilização dos botões de navegação do header (deixar as bordas redondas, cor, hover, etc)*/
     padding: 10px;
     /*distância entre o conteúdo de um elemento e suas bordas*/
     border-radius: 5px;
@@ -72,6 +73,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1.5%;
 }
 
 .colunadireita {
@@ -109,14 +111,14 @@ header {
     font-size: 30px;
 }
 
-.imagens {
+/* .imagens {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     gap: 30px 0px;
-    /*definir o espaçamento entre os itens em layouts*/
-}
+    /*definir o espaçamento entre os itens em layouts
+} */
 
 .setinha {
     margin: 1.5%;
@@ -187,7 +189,7 @@ header {
     color: var(--color-text);
 }
 
-/* Carrosel de textos para a página cursos */
+/* Organização da página de cursos */
 
 .carrosel {
     margin: 1%;
@@ -298,12 +300,6 @@ header {
     width: 70%;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 #botao {
     border-radius: 50%;
     cursor: pointer;
@@ -344,8 +340,10 @@ select {
 }
 
 .divform1 {
-    width: 22vw;
-    align-self: center;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     text-align: center;
     font-size: 1.8rem;
     align-items: center;
@@ -360,7 +358,6 @@ select {
     flex-direction: column;
     align-items: center;
 }
-
 
 .main-sign {
     display: flex;
@@ -428,7 +425,7 @@ input::placeholder {
 .h2--index {
     font-size: 2rem;
 }
- 
+
 .button-entrar:hover {
     color: rgb(55, 136, 241);
     transition: 0.5s;
@@ -475,7 +472,7 @@ input::placeholder {
     width: 100%;
 } */
 
-#sidebar a:hover{
+#sidebar a:hover {
     background-color: var(--background-color-side-menu-hover);
 }
 
@@ -483,7 +480,7 @@ input::placeholder {
     display: none;
 }
 
-.estilodomenu{
+.estilodomenu {
     align-self: flex-end;
 }
 
@@ -516,7 +513,7 @@ input::placeholder {
         width: 100%;
     }
 
-        body {
+    body {
         display: flex;
         flex-direction: column;
         background-image: none;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +15,18 @@
     <script defer src="script2.js"></script>
     <script defer src="videozinho.js"></script>
 </head>
+
 <body id="body" class="">
     <header class="nav-bar">
         <h1>
             <a href="index.html">
-                <img class="nomedaempresa" id="nomedaempresa" src="./fotos/rigardo2.1.png" alt="nome da empresa" width="270px">
+                <img class="nomedaempresa" id="nomedaempresa" src="./fotos/rigardo2.1.png" alt="nome da empresa"
+                    width="322px">
             </a>
         </h1>
-        <img id="botao" src="./fotos/botaonatal.png"  width="60px">
+        <img id="botao" src="./fotos/botaonatal.png" onclick="mudar_cor_tema()" width="60px">
         <nav class="botoesdenavegacao">
+            <!---se o menu suspenso der errado tirar a class nav-bar e colocar o header sem o último a-->
             <ul class="topbar">
                 <a class="estilodosbotoesdenavegacao hideOnMobile" href="index.html">Início</a>
                 <a class="estilodosbotoesdenavegacao hideOnMobile" href="sobrenos.html">Sobre nós</a>
@@ -45,7 +49,7 @@
                 <a class="estilodosbotoesdenavegacao_menususpenso" href="cursos.html">Cursos</a>
                 <a class="estilodosbotoesdenavegacao_menususpenso" href="professores.html">Professores</a>
                 <a class="estilodosbotoesdenavegacao_menususpenso" href="sign_in.html">Sign In</a>
-                <img id="botao2" src="./fotos/botaonatal.png" width="60px">
+                <img id="botao2" src="./fotos/botaonatal.png" onclick="mudar_cor_tema()" width="60px">
             </ul>
         </nav>
     </header>
@@ -132,4 +136,5 @@
     </main>
     <video id="videozinho" src="./fotos/fundonatal.mp4" autoplay loop></video>
 </body>
+
 </html>

@@ -41,11 +41,15 @@ botao.addEventListener("click", () => {
     atualizar_tema();
 })
 
-botao2.addEventListener("click", () => {
+// Funcionamento do botão de mudança de tema quando o tamanho da tela for menor
+
+botao2.addEventListener("click", () => {   
     temanatalino !== "active" ? enabletemanatalino() : disabletemanatalino();
     temanatalino = localStorage.getItem('temanatalino');
     atualizar_tema();
 })
+
+// Configuração para o funcionamento do menu suspenso quando o tamanho da tela diminuir
 
 function showSidebar(){
     const sidebar= document.getElementById('sidebar');
