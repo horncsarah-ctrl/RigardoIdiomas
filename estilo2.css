@@ -484,7 +484,7 @@ input::placeholder {
     align-self: flex-end;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 810px) {
     .hideOnMobile {
         display: none;
     }
