@@ -11,7 +11,8 @@
     --background-color-side-menu: #1445619b;
     --background-color-side-menu-hover: #143b52;
     --backgroun-color-da-escrita-do-fundo-da-tela-sobre-nos: rgba(0, 0, 0, 0);
-        --backgroun-color-da-escrita-do-fundo-da-aqui-na-rigardo: rgba(0, 0, 0, 0);
+    --backgroun-color-da-escrita-do-fundo-da-aqui-na-rigardo: rgba(0, 0, 0, 0);
+    --background-color-do-sign-in: #3c7ea4;
 }
 
 .temanatalino {
@@ -28,6 +29,7 @@
     --background-color-side-menu-hover: #69212C;
     --backgroun-color-da-escrita-do-fundo-da-tela-sobre-nos: rgba(0, 0, 0, 0.448);
     --backgroun-color-da-escrita-do-fundo-da-aqui-na-rigardo: rgba(0, 0, 0, 0.342);
+    --background-color-do-sign-in: #69212C;
 }
 
 * {
@@ -363,8 +365,8 @@ select {
 
 .divform2 {
     font-size: 1.7rem;
-    background-color: var(--background-color);
-    height: 60vh;
+    background-color: var(--background-color-do-sign-in);
+    height: 54vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
