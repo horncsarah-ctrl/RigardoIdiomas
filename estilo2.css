@@ -341,17 +341,20 @@ header {
 .main-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 input,
 select {
-    width: 42vh;
+    width: 15vw;
+    border: transparent solid;
+    border-radius: 5px;
+    min-width: 180px;
 }
 
 .divform1 {
     margin-top: 50px;
     display: flex;
-    width: 100%;
     justify-content: center;
     text-align: center;
     font-size: 1.8rem;
@@ -361,11 +364,13 @@ select {
 .divform2 {
     font-size: 1.7rem;
     background-color: var(--background-color);
-    height: 57vh;
+    height: 60vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 19vw;
+    min-width: 250px;
 }
 
 .main-sign {
@@ -492,8 +497,12 @@ input::placeholder {
 .estilodomenu {
     align-self: flex-end;
 }
+.p-width{
+    font-size: 90%;
+}
 
-@media (max-width: 600px) {
+
+@media (max-width: 810px) {
     .hideOnMobile {
         display: none;
     }
