@@ -10,6 +10,8 @@
     /*mudar a cor dos botões de navegação*/
     --background-color-side-menu: #1445619b;
     --background-color-side-menu-hover: #143b52;
+    --backgroun-color-da-escrita-do-fundo-da-tela-sobre-nos: rgba(0, 0, 0, 0);
+        --backgroun-color-da-escrita-do-fundo-da-aqui-na-rigardo: rgba(0, 0, 0, 0);
 }
 
 .temanatalino {
@@ -24,6 +26,8 @@
     /*mudar a cor dos botões de navegação*/
     --background-color-side-menu: #69212c8b;
     --background-color-side-menu-hover: #69212C;
+    --backgroun-color-da-escrita-do-fundo-da-tela-sobre-nos: rgba(0, 0, 0, 0.448);
+    --backgroun-color-da-escrita-do-fundo-da-aqui-na-rigardo: rgba(0, 0, 0, 0.342);
 }
 
 * {
@@ -109,6 +113,8 @@ header {
     font-family: "Inter", sans-serif;
     color: var(--color-text);
     font-size: 30px;
+    background-color: var(--backgroun-color-da-escrita-do-fundo-da-aqui-na-rigardo);
+    padding: 0.5%;
 }
 
 /* .imagens {
@@ -129,11 +135,14 @@ header {
 .texto {
     font-size: 2rem;
     width: 70%;
+    padding: 1.5%;
+    border-radius: 2%;
     margin: 1.5%;
     font-family: "Merriweather", serif;
     color: var(--color-text);
     font-size: 30px;
     text-align: justify;
+    background-color: var(--backgroun-color-da-escrita-do-fundo-da-tela-sobre-nos);
 }
 
 .foto_do_patinho {
@@ -439,7 +448,7 @@ input::placeholder {
     font-size: 1.2rem;
 }
 
-/*ORGANIZAÇÃO MENU SUSPEN*/
+/*ORGANIZAÇÃO MENU SUSPENSO*/
 
 .estilodosbotoesdenavegacao_menususpenso {
     padding: 10px;
