@@ -138,7 +138,7 @@ header {
     font-size: 2rem;
     width: 70%;
     padding: 1.5%;
-    border-radius: 2%;
+    border-radius: 30px;
     margin: 1.5%;
     font-family: "Merriweather", serif;
     color: var(--color-text);
@@ -150,6 +150,7 @@ header {
 .foto_do_patinho {
     width: 25%;
     position: fixed;
+    /*Serve para "prender" a imagem dos patinhos no lugar*/
     top: 70px;
     right: 0%;
     margin: 1.5%;
@@ -333,7 +334,7 @@ header {
     transform: translateY(-50%) translateX(-50%);
 }
 
-/* ESTILO DO SIGN IN */
+/* ORGANIZAÇÃO DO SIGN IN */
 
 .divform1 p {
     color: var(--color-text);
@@ -499,7 +500,8 @@ input::placeholder {
 .estilodomenu {
     align-self: flex-end;
 }
-.p-width{
+
+.p-width {
     font-size: 90%;
 }
 
@@ -559,5 +561,26 @@ input::placeholder {
 
     .foto_texto_pag_professores {
         width: 80%;
+    }
+
+    .organizacaolinguas {
+        font-family: "Merriweather", serif;
+        font-size: 20px;
+        color: var(--color-text);
+        margin: 1.5%;
+        text-align: left;
+    }
+
+    .texto {
+        font-size: 2rem;
+        width: 70%;
+        padding: 1.5%;
+        border-radius: 30px;
+        margin: 1.5%;
+        font-family: "Merriweather", serif;
+        color: var(--color-text);
+        font-size: 30px;
+        text-align: justify;
+        background-color: var(--backgroun-color-da-escrita-do-fundo-da-tela-sobre-nos);
     }
 }
