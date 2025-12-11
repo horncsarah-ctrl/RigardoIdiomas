@@ -583,4 +583,11 @@ input::placeholder {
         text-align: justify;
         background-color: var(--backgroun-color-da-escrita-do-fundo-da-tela-sobre-nos);
     }
+
+    .comeceaprender {
+        margin: 1.5%;
+        font-family: "Merriweather", serif;
+        color: var(--color-text);
+        font-size: 80px;
+    }
 }
